@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
    mode: 'development',
    entry: {
      index: './src/index.js',
-     //print: './src/print.js',
+     
    },
    devServer: {
     static: './dist',
@@ -27,6 +27,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
         use: ['style-loader', 'css-loader'],
       },
     ],
+    
   },
   optimization: {
     runtimeChunk: 'single',
