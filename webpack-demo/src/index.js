@@ -1,6 +1,7 @@
 import _ from 'lodash';
 
 import './style.css';
+
 const arr = [
   { description: 'Wash car', completed: false, index: 0 },
   { description: 'study', completed: false, index: 1 },
