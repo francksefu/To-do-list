@@ -8,13 +8,14 @@ const arr = [
   { description: 'prier', completed: true, index: 2 },
   { description: 'Help parent', completed: false, index: 3 },
 ];
+const use = _;
 const container = document.querySelector('.container');
 
 let check = 'checked';
 function completeTask() {
   const ul = document.createElement('ul');
   for (let i = 0; i < arr.length; i += 1) {
-    if (arr[i].completed === true) {
+    if (arr[i].completed === true && use !== 1) {
       check = 'checked';
     } else {
       check = '';
